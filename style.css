@@ -13,9 +13,8 @@ html, body {
 
 header {
     padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color:rgb(68, 131, 168);
-    color: #ffffff;
+   background-color:black;
+    
 }
 
 header h1 {
@@ -32,14 +31,14 @@ header nav {
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    color:white;
+    font-size: 26px;
+    
 }
 
-header nav ul {
+/* header nav ul {
     list-style-type: none;
-    color:white;
-}
+    
+} */
 
 header nav ul li {
     display: inline-block;
@@ -48,7 +47,7 @@ header nav ul li {
 
 #photo {
     position:relative;
-    background-image:url("images/motherboard.png");
+    background-image:url("images/wood-grain.jpg");
 }
 
 #header{
@@ -70,10 +69,11 @@ header nav ul li {
 }
 
 .content {
-    width: 75%;
+    width: 100%;
     display: inline-block;
     margin-left: 20px;
 }
+
 
 .container {
     display: flex;
@@ -103,11 +103,15 @@ header nav ul li {
     font-size: 50px;
   }     
    main {
-    padding: 20px;
+    display: flex;
+    flex-wrap:wrap;
+    margin-top: 2%;
+    padding: 10px;
     font-size: 16px;
+    justify-content:center;
   }
 
-.benefits {
+/* .benefits {
     position:relative;
     width: 250px;
     height: 100px;
@@ -115,9 +119,9 @@ header nav ul li {
     color:black;
     font-weight:bold;
     text-align: center;
-}
+} */
 
-.about-me {
+/* .about-me {
     padding: 50px;
     height: 200px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -142,10 +146,10 @@ header nav ul li {
     height: 200px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color:rgb(68, 131, 168);
-}
+} */
 
 
-.about-me h2 {
+/* .about-me h2 {
     margin-bottom: 20px;
     font-size: large;
     color:rgb(68, 131, 168);
@@ -161,83 +165,101 @@ header nav ul li {
     margin-bottom: 20px;
     font-size: 36px;
     color:rgb(68, 131, 168);
-}
+} */
 
-.resume h2 {
+/* .resume h2 {
     margin-bottom: 20px;
     font-size: 36px;
     color: white;
+} */
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
 }
+
+
 
 .card {
     flex: 1 0 0;
+    padding: 10px;
     text-align: center;
+    border-style: solid;
     border-width: 1px;
   }
   
+  .card p {
+      padding: 20px;
+      background: #13293d;
+      color: #fff;
+  }
 
   
   .card img {
-    width: 100%;
-    min-width: 400px;
+    width: 50%;
+    min-width: 200px;
+    justify-content:space-between;
+    flex-direction:column;
+    flex-wrap:wrap;
   }
 
-footer {
+/* footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display:inline-block;
-}
+} */
 
-footer h2 {
+/* footer h2 {
     font-size: 20px;
-}
+} */
 
-.footer {
+/* .footer {
     position: absolute;
     bottom:0;
     width:100%;
     background-color:rgb(68, 131, 168);
-}
+} */
 
-.footer p {
+/* .footer p {
     color: #fff;
     font-size: 30px;
     display: inline-block;
     
-}
+} */
 
-.bottom {
+/* .bottom {
     max-width: 1674px;  /* adjust to allow for padding as needed */
     padding:0 50px;
     display: flex;
     align-items: center;
-}
+} */
 
-#ftr-wrap {
+/* #ftr-wrap {
     display:table;
     table-layout:fixed;
     width:100%;
     margin:0 auto;
-}
-#ftr-wrap > div {
+} */
+/* #ftr-wrap > div {
     display:table-cell;
     vertical-align:middle;
     outline:1px dashed red;  /* TEST Outline.  TO BE DELETED. */
-}
-#ftr-wrap > div:nth-child(1) {text-align:left;}
+} */
+/* #ftr-wrap > div:nth-child(1) {text-align:left;}
 #ftr-wrap > div:nth-child(2) {text-align:center;}
-#ftr-wrap > div:nth-child(3) {text-align:right;}
+#ftr-wrap > div:nth-child(3) {text-align:right;} */
 
-.ftr-links ul {
+/* .ftr-links ul {
     padding: 0;
 }
 .ftr-links ul li {
     display: inline-block;
     padding-right: 15px;
-    font-size:.75em;
-}
+    font-size:.75em; */
+/* }
 .ftr-links ul li a {
     color: #fff;
     margin: 0;
-}
+} */
