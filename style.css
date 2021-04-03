@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+html, body {
+    background-color: #d9dcd6;
+    margin: 0;
+}
+
+header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:rgb(68, 131, 168);
+    color: #ffffff;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+header h1 .portfolio {
+    color: #d9dcd6;
+}
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+    color:white;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+#photo {
+    position:relative;
+    background-image:url("images/motherboard.png");
+}
+
+#header{
+    left: 50%;
+    margin-left: -500px;
+    background:url(images/logo.png) no-repeat;
+    width:1000px;
+    height:200px;
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.benefits {
+    position:relative;
+    width: 250px;
+    height: 100px;
+    border: 5px solid #000;
+    color:black;
+    font-weight:bold;
+    text-align: center;
+}
+
+.about-me {
+    padding: 50px;
+    height: 200px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(68, 131, 168);
+}
+
+.work {
+    height: 200px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(68, 131, 168);
+}
+
+.contact-me {
+    height: 200px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(68, 131, 168);
+    
+}
+
+.resume {
+    padding: 50px;
+    height: 200px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(68, 131, 168);
+}
+
+
+.about-me h2 {
+    margin-bottom: 20px;
+    font-size: large;
+    color:rgb(68, 131, 168);
+}
+
+.work h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: rgb(68, 131, 168);
+}
+
+.contact-me h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    color:rgb(68, 131, 168);
+}
+
+.resume h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: white;
+}
+
+.card {
+    flex: 1 0 0;
+    text-align: center;
+    border-width: 1px;
+  }
+  
+
+  
+  .card img {
+    width: 100%;
+    min-width: 400px;
+  }
+
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display:inline-block;
+}
+
+footer h2 {
+    font-size: 20px;
+}
+
+.footer {
+    position: absolute;
+    bottom:0;
+    width:100%;
+    background-color:rgb(68, 131, 168);
+}
+
+.footer p {
+    color: #fff;
+    font-size: 30px;
+    display: inline-block;
+    
+}
+
+.container {
+    max-width: 1674px;  /* adjust to allow for padding as needed */
+    padding:0 50px;
+    display: flex;
+    align-items: center;
+}
+
+#ftr-wrap {
+    display:table;
+    table-layout:fixed;
+    width:100%;
+    margin:0 auto;
+}
+#ftr-wrap > div {
+    display:table-cell;
+    vertical-align:middle;
+    outline:1px dashed red;  /* TEST Outline.  TO BE DELETED. */
+}
+#ftr-wrap > div:nth-child(1) {text-align:left;}
+#ftr-wrap > div:nth-child(2) {text-align:center;}
+#ftr-wrap > div:nth-child(3) {text-align:right;}
+
+.ftr-links ul {
+    padding: 0;
+}
+.ftr-links ul li {
+    display: inline-block;
+    padding-right: 15px;
+    font-size:.75em;
+}
+.ftr-links ul li a {
+    color: #fff;
+    margin: 0;
+}
