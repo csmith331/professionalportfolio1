@@ -34,12 +34,6 @@ header nav {
     font-size: 26px;
     
 }
-
-/* header nav ul {
-    list-style-type: none;
-    
-} */
-
 header nav ul li {
     display: inline-block;
     margin-left: 25px;
@@ -78,18 +72,21 @@ header nav ul li {
     margin-left: 20px;
 }
 
-
 .container {
     display: flex;
     flex-direction:column;
     justify-content:space-between;
-  }      
+  }    
+  
+  /* aside {
+    flex: 1;
+    background-color: #b9c6ae;
+    padding: 80px;
+    text-align: center;
+  } */
 
-  
-  
-  
-  
   aside {
+    
     height: 500px;
     width: 300px;
     border-right: 3px solid black;
@@ -100,180 +97,116 @@ header nav ul li {
     font-size: 50px;
     padding:20px;
   }     
-
+  
   #Contact {
-      margin-bottom:80%;
-      
-      
-  }
+    margin-bottom:80%;
+    
+    
+}
 
-  #Contact h1 {
-      position:relative;
-      top: 700px;
-      padding: 20px;
-      border-right: 3px solid black;
-  }
-
-
-   main {
-    display: flex;
-    flex-wrap:wrap;
-    margin-top: 2%;
-    padding: 10px;
-    font-size: 16px;
-    justify-content:center;
-  }
-
-/* .benefits {
+#Contact h1 {
     position:relative;
-    width: 250px;
-    height: 100px;
-    border: 5px solid #000;
-    color:black;
-    font-weight:bold;
-    text-align: center;
-} */
+    top: 700px;
+    padding: 20px;
+    border-right: 3px solid black;
+}
 
 .benefits {
     margin-right:20px;
     padding: 30px;
-    clear:both;
     float:right;
     width: 60%;
     height: 100%;
     font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
-    position:relative;
-    top:-60em;
-}
-
-/* .about-me {
-    padding: 50px;
-    height: 200px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:rgb(68, 131, 168);
-}
-
-.work {
-    height: 200px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:rgb(68, 131, 168);
-}
-
-.contact-me {
-    height: 200px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:rgb(68, 131, 168);
     
 }
 
-.resume {
-    padding: 50px;
-    height: 200px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:rgb(68, 131, 168);
-} */
-
-
-/* .about-me h2 {
-    margin-bottom: 20px;
-    font-size: large;
-    color:rgb(68, 131, 168);
+#box{
+    display:flex;
+    width:1200px;
 }
 
-.work h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-    color: rgb(68, 131, 168);
+#box div {
+    flex-basis:120px;
+
 }
-
-.contact-me h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-    color:rgb(68, 131, 168);
-} */
-
-/* .resume h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-    color: white;
-} */
-
-/* main {
+  .products {
+    flex: 4;
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 2%;
-} */
+    justify-content: flex-end;
+  }
 
-
-
-.card {
-    display:flex;
-    padding: 10px;
-    text-align: center;
+  .card {
     border-style: solid;
     border-width: 1px;
-    
+    border-radius: 10px;
+    padding: 10px;
+    flex: 0 0 400px;
+  }
+  
+  .card header {
+    padding: 20px;
+    color:white;
   }
   
   .card p {
-      padding: 20px;
-      background: #13293d;
-      color: #fff;
+    text-align: center;
   }
-
   
   .card img {
-    width: 50%;
-    min-width: 200px;
-    justify-content:space-between;
-    flex-direction:column;
-    flex-wrap:wrap;
+    width: 100%;
   }
 
-footer {
+  @media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+  }
+
+  footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display:inline-block;
-} */
+    position: relative;
+    width:100%;
+    left:40%;
+    font-size:30px;
+    top:280px;
+} 
 
 footer h2 {
-    font-size: 20px;
+    font-size: 60px;
 }
 
-.footer {
-    position: relative;
-    top:998px;
-    width:100%;
-    left:50%;
-    
-}
-
-.footer p {
+footer p {
     color:black;
     font-size: 30px;
     display: inline-block;
     
-} */
+} 
 
 .bottom {
     max-width: 1674px;  /* adjust to allow for padding as needed */
     padding:0 50px;
     display: flex;
     align-items: center;
-} */
+} 
 
 #ftr-wrap {
     display:table;
     table-layout:fixed;
     width:100%;
     margin:0 auto;
-} */
+} 
 
 #ftr-wrap > div {
     display:table-cell;
     vertical-align:middle;
-    outline:1px dashed red;  /* TEST Outline.  TO BE DELETED. */
+    
 } 
 
 #ftr-wrap > div:nth-child(1) {text-align:left;}
@@ -284,10 +217,10 @@ footer h2 {
     padding: 0;
 }
 
- .ftr-links ul li {
+.ftr-links ul li {
     display: inline-block;
     padding-right: 15px;
-    font-size:.75em;
+    /* font-size:.75em; */
 } 
 
 .ftr-links ul li a {
