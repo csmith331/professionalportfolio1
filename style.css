@@ -45,7 +45,7 @@ header nav ul li {
 
 #photo {
     position:relative;
-    background-image:url("images/wood-grain.jpg");
+    background-image:url("images/pexels-leaf.jpg");
 }
 
 #header{
@@ -118,7 +118,7 @@ header nav ul li {
     width: 60%;
     height: 100%;
     font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
-    
+    color:white;
 }
 
 #box{
@@ -175,7 +175,7 @@ header nav ul li {
     width:100%;
     left:40%;
     font-size:30px;
-    top:280px;
+    top:150px;
 } 
 
 footer h2 {
