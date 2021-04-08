@@ -26,13 +26,96 @@ header {
 
 header h1 {
     display: inline-block;
-    font-size: 48px;
+    font-size: 75px;
 }
 
 header h1 .portfolio {
     color: #d9dcd6;
 }
 
+header h1 .nav {
+    color:white;
+}
+
+main {
+    margin-top:20px;
+    margin-bottom:45px;
+    max-width: 90%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+/* .main-section {
+    margin:25px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    align-items:stretch;
+    justify-content:space-between;
+}
+
+.main section > h2 {
+    flex:0 0 22%;
+    text-align:right;
+    padding-right: 15px;
+    border-right: 4 px solid;
+    font-size:4vw;
+    line-height:1.2;
+
+    
+}
+.main section > div {
+    flex:0 0 75%;
+
+}
+
+.project-container {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+
+}
+
+.project-item {
+    border:5px solid;
+    min-height: 200px;
+    max-height: 200px;
+    flex-basis: clac (50% -1em);
+    display:flex;
+    align-items:flex-end;
+    padding: 0 0 20px 0;
+    margin: 0.5em;
+    text-decoration:none;
+    background-size: 150%;
+    font-size:.9rem;
+
+}
+.project-item:first-child {
+    min-height:400px;
+    flex-basis:100%;
+
+} 
+
+.project-item:hover {
+    background-color: black;
+    
+}
+
+.project1 {
+    background-image: url("./images/computer-1.jpg")
+}
+.project-item:div {
+    background-color:blue;
+    padding: 8px 10px;
+
+}
+
+.project-item h3 {
+    font-size:1.6rem;
+
+} */
 header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -46,14 +129,47 @@ header nav ul li {
     margin-left: 25px;
 }
 
-.nav {
+/* .nav h1 {
     color:white;
-}
+} */
 
-#photo {
+/* #photo {
     position:relative;
     background-image:url("images/pexels-leaf.jpg");
-}
+} */
+
+.parent {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  
+  .image1 {
+    position: relative;
+    background-image:url("images/pexels-leaf.jpg");
+    top: 0;
+    left: 0;
+    border: 1px solid #000000;
+  }
+  
+  .image2 {
+    position: absolute;
+    image:url("images/IMG_0405.jpg");
+    top: 30px;
+    left: 30px;
+    border: 1px solid #000000;
+  }
+
+.text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size:70px;
+  }
 
 #header{
     left: 50%;
@@ -118,7 +234,7 @@ header nav ul li {
 
 #Contact h1 {
     position:relative;
-    top: 550px;
+    top: 600px;
     padding: 20px;
     border-right: 3px solid black;
 }
@@ -151,6 +267,32 @@ header nav ul li {
     color:white;
   }
 
+
+  .card1 {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 10px;
+    flex: 0.2 0 400px;
+  }
+
+  .card1 header {
+        padding: 20px;
+        color:white;
+        background-color:black;
+        font-weight:bold;
+      }
+
+  .card1 p {
+    text-align: center;
+  }
+
+  .card1 img {
+    width: 100%;
+   
+    
+  }
+
   .card {
     border-style: solid;
     border-width: 1px;
@@ -174,10 +316,15 @@ header nav ul li {
     width: 100%;
   }
 
-  @media screen and (max-width: 768px) {
-    main,
-    nav {
-      flex-direction: column;
+  
+    @media screen and (max-width: 768px) {
+            /* Use flex-direction to stack the navbar, sidebar, and body */
+            main,
+            nav {
+              flex-direction: column;
+
+
+      /* flex-direction: column; */
     }
   }
 
